@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;515;600;700&display=swap');
+@import url(assets/fonts/Comfortaa);
+
+body{
+	background-color: hsla(60, 70%, 30%, 0.9);
+	margin: 0 0;
+	font-family: corbel, san-serif;
+	color: rgba(10, 250, 10 , 0.9);
+}
+
+
+
+/*******END OF BODY LAYOUT******************/
+
+#title{
+	font-size: 2.5em;
+	text-align: center;
+	margin: 30px 0 0 5px;
+	
+}
+#description{
+	margin: 10px;
+	text-align: center;
+	font-style: italic;
+}
+
+#survey-form{
+	box-sizing: border-box;
+	width: 700px;
+	margin: 5px auto;
+	background-color: hsla(90, 40%, 30%, 0.3);
+	padding: 40px 50px;
+	border-radius: 20px;
+	font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select, textarea{
+	background: rgba(250,255,250,0.2);
+	border: none;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	color: rgb(200, 200, 200);
+	padding: 10px;
+	width: 100%;
+	box-shadow: 0px 1px 0 rgba(0,0,0,0.3) inset;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+}
+
+label{
+	display: block;
+	font-weight: 200px;
+	font-size: 1.2em;
+}
+
+input:focus, select:focus, textarea:focus{
+	box-shadow: 0px 0px 5px rgba(10, 250, 10 , 0.9);
+	border: 1px solid rgba(10, 250, 10 , 0.9);
+}
+
+
+
+select{
+	padding: 6px 3px;
+	height: 32px;
+	border-radius: 2px;
+}
+
+#submit{
+		background-color: rgba(10, 240, 10 , 0.9);
+		padding: 15px 30px;
+		border: none;
+		text-align: center;
+		border-radius: 8px;
+		border-width: 2px;
+		cursor: pointer;
+		font-style: bold;
+		font-size: 1.2em;
+		color: rgba(250,255,240,0.7);
+		box-sizing: border-box;
+		width: 200px;
+		margin: 0 auto;
+}
+
+@media and screen(max-width: 400px){
+	#survey-form{
+			box-sizing: border-box;
+			width: 60%;
+			
+		}
+}	

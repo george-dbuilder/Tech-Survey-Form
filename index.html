@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Tech Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="overlay">
+  
+  <h1 id="title">Tech Survey Form</h1>
+  <p id="description"> Thank you for taking your time to complete this tech survey</p>
+
+  <form id="survey-form">
+
+    <label for="name" id="name-label">Name</label>
+    <input type="text" name="user_name" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="user_email" id="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age (Optional) </label>
+    <input type="number" name="user_age" id="number" min="10" max="60" placeholder="Age" required>
+
+    <label>Which option best describes your current role?</label>
+    <select name="user_role" required id="dropdown">
+        <option value="select" disabled selected >Select current role</option>
+        <option value="Student">Student</option>
+        <option value="full_time_learner" >Full Time Learner</option>
+        <option value="full-time-learner" >Full Time Learner</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
+        <option value="other" >Other</option>
+    </select>
+
+    <label>Would you recommend learning a tech skill to a friend?</label>
+    <label for="definitely"><input type="radio" name="answer" id="definitely" value="definitely" required> Definitely</label>
+    <label for="maybe"><input type="radio" name="answer" id="maybe" value="maybe" required> Maybe</label>
+    <label for="no"><input type="radio" name="answer" id="no" value="no" required> No</label>
+    <br>
+
+    <label>What is your favorite learning pattern?</label>
+    <select name="user_pattern" required id="dropdown"> 
+        <option value="select_an_option" disabled selected >Select an option</option>
+        <option value="videos" > Videos</option>
+        <option value="books" >Books</option>
+        <option value="online_courses">Online Courses</option>
+        <option value="bootcamps" >Bootcamps</option>
+        <option value="Combination_of_two_or_more" >Combination of two or more</option>
+    </select>
+
+    <label>What field(s) in tech are you interested in?</label>
+
+    <label for="frontend">
+    <input type="checkbox" name="checkbox" value="frontend" id="frontend" required> Frontend Developement</label>
+
+    <label for="backend">
+    <input type="checkbox" name="checkbox" value="backend" id="backend" required> Backend  Developement</label>
+
+    <label for="ui_ux">
+    <input type="checkbox" name="checkbox" value="ui_ux" id="ui_ux" required> User Interface / User Experience</label>
+
+    <label for="product_design">
+    <input type="checkbox" name="checkbox" value="product_design" id="product_design" required> Product Design</label>
+
+    <label for="data_science">
+    <input type="checkbox" name="checkbox" value="dat_science" id="data_science" required> Data Science</label>
+    <br>
+
+    <label>Why are interested in the field(s) that you have chosen?</label>
+    <textarea placeholder="Enter your comments" required></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </div>
+</body>
+</html>
